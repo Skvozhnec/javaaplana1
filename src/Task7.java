@@ -14,9 +14,9 @@ public static void main(String[] args) {
 
         int number = str.nextInt();
 
-        int X = 1;
-        int Y = 2;
-        int Z = 3;
+        final int X = 1;
+        final int Y = 2;
+        final int Z = 3;
 
         if (number == X || number == Y || number == Z) {
         System.out.println("Данное значение имеется в константах");

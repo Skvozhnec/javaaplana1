@@ -14,22 +14,18 @@ public class Task6 {
     public static void main(String[] args) {
         Scanner str = new Scanner(System.in);
         System.out.println("Введите число X: ");
-
         int X = str.nextInt();
 
-        Scanner str2 = new Scanner(System.in);
         System.out.println("Введите число Y: ");
+        int Y = str.nextInt();
 
-        int Y = str2.nextInt();
-
-        Scanner str3 = new Scanner(System.in);
         System.out.println("Введите число Z: ");
+        int Z = str.nextInt();
 
-        int Z = str3.nextInt();
+        float R = (float) (X+Y+Z) / 3;
+        System.out.println("Среднее арифмитическое 3х чисел: " + R);
 
-        System.out.println("Среднее арифмитическое 3х чисел: " + (X+Y+Z) / 3);
-
-        int M = ((X+Y+Z) / 3) / 2 ;
+        int M = (int)(R/2);
 
         if (M > 3)
         {
